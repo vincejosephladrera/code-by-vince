@@ -11,7 +11,7 @@ export default function ExpertiseCard({
 	description: string;
 }) {
 	return (
-		<Card className='text-left gap-4'>
+		<Card className='text-left gap-4 h-full'>
 			<CardHeader>
 				<div className='mb-6'>{icon}</div>
 				<CardTitle className='font-extrabold text-2xl text-primary'>{title}</CardTitle>
