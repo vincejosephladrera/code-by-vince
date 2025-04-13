@@ -94,7 +94,11 @@ export default function CoreCompetencies() {
 					</div>
 				)}
 				<Card className='bg-orange-50 py-6 overflow-hidden relative'>
-					<img src={imgLeft} className='core-competency-section__left-thumb' />
+					<img
+						alt='decorative-cartoon-illustration'
+						src={imgLeft}
+						className='core-competency-section__left-thumb'
+					/>
 					<CardContent className='sm:max-lg:text-left sm:pr-[42%] md:pr-[33%] lg:pr-[24px]'>
 						<h3 className='mb-3 font-extrabold leading-snug text-2xl'>
 							Ready to Bring Your Ideas to Life ?
@@ -112,7 +116,11 @@ export default function CoreCompetencies() {
 							Let's Build Together
 						</a>
 					</CardContent>
-					<img src={imgRight} className='core-competency-section__right-thumb' />
+					<img
+						alt='decorative-cartoon-illustration'
+						src={imgRight}
+						className='core-competency-section__right-thumb'
+					/>
 				</Card>
 			</div>
 		</section>

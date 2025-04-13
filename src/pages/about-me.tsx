@@ -100,6 +100,7 @@ export default function AboutMe() {
 							</div>
 						)}
 						<img
+							alt='decorative-cartoon-illustration'
 							src={img}
 							width={616}
 							height={289}

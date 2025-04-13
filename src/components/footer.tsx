@@ -69,7 +69,13 @@ export default function Footer() {
 					<span className='mr-auto text-neutral-100'>
 						© 2024 Code by Vince. All Rights Reserved
 					</span>
-					<img className='w-[50%] sm:w-[25%] h-auto' src={logo} width={355} height={48} />
+					<img
+						alt='logo'
+						className='w-[50%] sm:w-[25%] h-auto'
+						src={logo}
+						width={355}
+						height={48}
+					/>
 				</div>
 			</div>
 		</section>
