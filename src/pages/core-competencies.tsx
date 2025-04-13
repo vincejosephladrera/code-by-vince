@@ -16,7 +16,6 @@ import { Card, CardContent } from '@/components/ui/card';
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { buttonVariants } from '@/components/ui/button';
-import { Link } from '@tanstack/react-router';
 
 const expertiseData = [
 	{

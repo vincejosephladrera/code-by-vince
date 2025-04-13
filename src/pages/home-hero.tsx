@@ -1,5 +1,4 @@
 import { Button, buttonVariants } from '@/components/ui/button';
-import { Link } from '@tanstack/react-router';
 
 export default function HomeHero() {
 	return (
