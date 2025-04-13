@@ -102,7 +102,7 @@ const SvgComponent = (props: React.SVGProps<SVGSVGElement>): React.JSX.Element =
 				/>
 			</g>
 			<a
-				href='https:www.linkedin.com/in/ladreravincejoseph'
+				href='https://www.linkedin.com/in/ladreravincejoseph'
 				target='__blank'
 				id='linkedin__element'
 			>

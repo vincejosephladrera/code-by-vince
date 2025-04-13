@@ -62,7 +62,7 @@ export default function AboutMe() {
 						</p>
 						<div className='flex'>
 							<a
-								href=''
+								href='mailto:ladreravincejoseph@gmail.com'
 								className={buttonVariants({
 									variant: 'default',
 									size: 'lg',

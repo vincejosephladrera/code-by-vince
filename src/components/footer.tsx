@@ -38,7 +38,7 @@ export default function Footer() {
 								<span className='text-gray-500 opacity-50 pointer-events-none'>Twitter</span>
 								<span className='text-gray-500 opacity-50 pointer-events-none'>Instagram</span>
 								<a
-									href='https:www.linkedin.com/in/ladreravincejoseph'
+									href='https://www.linkedin.com/in/ladreravincejoseph'
 									className=' hover:text-primary transition-all'
 									target='__blank'
 								>
