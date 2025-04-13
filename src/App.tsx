@@ -1,9 +1,12 @@
 import { RouterProvider, createRouter } from '@tanstack/react-router';
+import { createHashHistory } from '@tanstack/react-router';
 import { routeTree } from './routeTree.gen';
 import { QueryClientProvider, QueryClient } from '@tanstack/react-query';
 import 'swiper/swiper-bundle.css';
 
-const router = createRouter({ routeTree });
+const hashHistory = createHashHistory();
+
+const router = createRouter({ history: hashHistory, routeTree });
 const queryClient = new QueryClient();
 
 function App() {
