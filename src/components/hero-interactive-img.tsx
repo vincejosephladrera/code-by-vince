@@ -1,4 +1,6 @@
-const SvgComponent = (props) => (
+import React from 'react';
+
+const SvgComponent = (props: React.SVGProps<SVGSVGElement>): React.JSX.Element => (
 	<svg xmlns='http://www.w3.org/2000/svg' width={247} height={67} fill='none' {...props}>
 		<g clipPath='url(#a)'>
 			<path
