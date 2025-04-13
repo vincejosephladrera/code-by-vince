@@ -8,9 +8,15 @@ import {
 	TargetIcon,
 } from '@/assets/icons/icons';
 
+import imgLeft from '@/assets/images/core-competencies-left.svg';
+import imgRight from '@/assets/images/core-competencies-right.svg';
+
+import { Card, CardContent } from '@/components/ui/card';
+
 import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import { Navigation, Pagination } from 'swiper/modules';
+import { buttonVariants } from '@/components/ui/button';
+import { Link } from '@tanstack/react-router';
 
 const expertiseData = [
 	{
@@ -45,7 +51,7 @@ const expertiseData = [
 	},
 ];
 
-export default function Expertise() {
+export default function CoreCompetencies() {
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
@@ -67,12 +73,12 @@ export default function Expertise() {
 	}, [isMobile]);
 
 	return (
-		<div className='bg-primary'>
-			<div className='container mx-auto py-20 px-4 text-center text-white'>
-				<p className='font-medium text-lg mb-3'>Expertise</p>
+		<section className='bg-primary py-20'>
+			<div className='container mx-auto px-4 text-center text-white'>
+				<p className='font-medium text-lg mb-3'>Core Competencies</p>
 				<h2 className=' font-bold text-[min(8vw,48px)] mb-12'>Why Choose Me as Your Developer</h2>
 				{isMobile ? (
-					<Swiper spaceBetween={24} slidesPerView={1.4}>
+					<Swiper spaceBetween={24} slidesPerView={1.4} className='mb-12'>
 						{expertiseData.map(({ title, description, icon }) => {
 							return (
 								<SwiperSlide>
@@ -82,13 +88,34 @@ export default function Expertise() {
 						})}
 					</Swiper>
 				) : (
-					<div className='grid grid-cols sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+					<div className='grid grid-cols sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-12'>
 						{expertiseData.map(({ title, description, icon }) => {
 							return <ExpertiseCard icon={icon()} title={title} description={description} />;
 						})}
 					</div>
 				)}
+				<Card className='bg-orange-50 py-6 overflow-hidden relative'>
+					<img src={imgLeft} className='core-competency-section__left-thumb' />
+					<CardContent className='sm:max-lg:text-left sm:pr-[42%] md:pr-[33%] lg:pr-[24px]'>
+						<h3 className='mb-3 font-extrabold leading-snug text-2xl'>
+							Ready to Bring Your Ideas to Life ?
+						</h3>
+						<p className='mb-4 leading-relaxed text-text-body'>
+							Let’s turn your vision into an engaging digital experience that delivers results.
+						</p>
+						<Link
+							to={'/'}
+							className={buttonVariants({
+								variant: 'default',
+								size: 'lg',
+							})}
+						>
+							Let’s Build Together
+						</Link>
+					</CardContent>
+					<img src={imgRight} className='core-competency-section__right-thumb' />
+				</Card>
 			</div>
-		</div>
+		</section>
 	);
 }

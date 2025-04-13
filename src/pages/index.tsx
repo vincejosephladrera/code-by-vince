@@ -1,5 +1,5 @@
 import HomeHero from './home-hero';
-import Expertise from './expertise';
+import CoreCompetencies from './core-competencies';
 import RecentProjects from './recent-projects';
 import AboutMe from './about-me';
 
@@ -9,7 +9,7 @@ export default function HomePage() {
 			<HomeHero />
 			<RecentProjects />
 			<AboutMe />
-			<Expertise />
+			<CoreCompetencies />
 		</>
 	);
 }

@@ -1,5 +1,6 @@
 {
 	"name": "code-by-vince",
+	"homepage": "https://vincejosephladrera.github.io/code-by-vince/",
 	"description": "Personal Website",
 	"private": true,
 	"version": "0.0.0",
@@ -8,7 +9,9 @@
 		"dev": "vite",
 		"build": "tsc -b && vite build",
 		"lint": "eslint .",
-		"preview": "vite preview"
+		"preview": "vite preview",
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d dist"
 	},
 	"author": "Vince Joseph Ladrera",
 	"dependencies": {

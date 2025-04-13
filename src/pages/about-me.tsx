@@ -74,7 +74,7 @@ export default function AboutMe() {
 					</div>
 				</div>
 				<div className='relative z-0'>
-					<h3 className='mb-6'>Tools and Skill sets</h3>
+					<h3 className='mb-6'>The Stack Behind the Magic</h3>
 
 					{isMobile ? (
 						<>
