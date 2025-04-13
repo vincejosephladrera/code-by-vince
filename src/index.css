@@ -218,3 +218,39 @@
 .home__subheading--white {
 	@apply text-white font-medium text-lg;
 }
+
+/* #fb__element {
+	cursor: pointer;
+} */
+
+#fb__element path {
+	filter: grayscale(1);
+}
+
+/* #fb__element:hover path {
+	filter: grayscale(0);
+} */
+
+/* #ig__element {
+	cursor: pointer;
+} */
+
+#ig__element path {
+	filter: grayscale(1);
+}
+
+/* #ig__element:hover path {
+	filter: grayscale(0);
+} */
+
+#linkedin__element {
+	cursor: pointer;
+}
+
+#linkedin__element path {
+	filter: grayscale(1);
+}
+
+#linkedin__element:hover path {
+	filter: grayscale(0);
+}
