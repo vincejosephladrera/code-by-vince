@@ -1,26 +1,25 @@
 import { buttonVariants } from './ui/button';
-import { Link } from '@tanstack/react-router';
+import logo from '@/assets/images/logo-footer.svg';
 
 export default function Footer() {
 	return (
-		<div className='bg-neutral-950 py-20 text-white '>
-			<div className='container mx-auto px-4'>
+		<section className='bg-neutral-950 py-10 sm:py-20 text-white '>
+			<div className='container--default'>
 				<div className='grid gap-y-10 md:grid-cols-2 md:max-lg:gap-x-20 lg:grid-cols-12'>
 					<div className='lg:col-span-4'>
 						<h2 className='font-bold text-4xl mb-6'>Ready to Bring Your Ideas to Life?</h2>
-						<p className='mb-10'>
+						<p className='mb-10 text-neutral-100'>
 							Let’s turn your vision into an engaging digital experience that delivers results.
 						</p>
-						<Link
-							to={'/'}
+						<a
 							className={buttonVariants({
 								variant: 'default',
 								size: 'lg',
-								className: 'w-full lg:w-fit',
 							})}
+							href='mailto:ladreravincejoseph@gmail.com'
 						>
-							Let’s Build Together
-						</Link>
+							Let's Build Together
+						</a>
 					</div>
 					<div className='grid xs:grid-cols-2 sm:grid-cols-4 md:grid-cols-2 lg:col-span-8 lg:flex lg:justify-around'>
 						<div className='mb-10'>
@@ -38,21 +37,41 @@ export default function Footer() {
 								<span className='text-gray-500 opacity-50 pointer-events-none'>Facebook</span>
 								<span className='text-gray-500 opacity-50 pointer-events-none'>Twitter</span>
 								<span className='text-gray-500 opacity-50 pointer-events-none'>Instagram</span>
-								<span className='text-gray-500 opacity-50 pointer-events-none'>Linkedin</span>
+								<a href='' className=' hover:text-primary transition-all'>
+									Linkedin
+								</a>
 							</div>
 						</div>
 						<div>
 							<div className='grid gap-6 sm:col-span-2 lg:col-span-2'>
 								<p className='font-bold'>Get in Touch</p>
-								<a href='tel:+639457012999'>09457012999</a>
-								<a href='ladreravincejoseph@gmail.com'>ladreravincejoseph@gmail.com</a>
+								<a className=' hover:text-primary transition-all' href='tel:+639457012999'>
+									09457012999
+								</a>
+								<a
+									className=' hover:text-primary transition-all'
+									href='mailto:ladreravincejoseph@gmail.com'
+								>
+									ladreravincejoseph@gmail.com
+								</a>
+								<a
+									className=' hover:text-primary transition-all'
+									href='mailto:vincejosephladrera@codebyvince.com'
+								>
+									vincejosephladrera@codebyvince.com
+								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 				<hr className='my-10 lg:my-20' />
-				<span className='mr-auto'>© 2024 Code by Vince. All Rights Reserved</span>
+				<div className='flex flex-col sm:flex-row sm:items-center justify-between gap-6'>
+					<span className='mr-auto text-neutral-100'>
+						© 2024 Code by Vince. All Rights Reserved
+					</span>
+					<img className='w-[50%] sm:w-[25%] h-auto' src={logo} width={355} height={48} />
+				</div>
 			</div>
-		</div>
+		</section>
 	);
 }

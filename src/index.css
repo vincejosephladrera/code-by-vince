@@ -22,6 +22,10 @@
 	--line-height-base: 1.2;
 	--color-body: #252527;
 	--breakpoint-xs: 30rem;
+	--color-neutral-950: #252527;
+	--color-orange-50: #fff6ec;
+	--color-green-50: #ecfdf6;
+	--color-neutral-100: #e6e5e8;
 }
 
 @layer base {
@@ -193,4 +197,24 @@
 
 .swiper-slide {
 	height: initial !important;
+}
+
+.container--default {
+	@apply container mx-auto px-4;
+}
+
+.home__heading {
+	@apply text-secondary text-[min(8vw,48px)];
+}
+
+.home__heading--white {
+	@apply text-white text-[min(8vw,48px)];
+}
+
+.home__subheading {
+	@apply text-primary font-medium text-lg;
+}
+
+.home__subheading--white {
+	@apply text-white font-medium text-lg;
 }

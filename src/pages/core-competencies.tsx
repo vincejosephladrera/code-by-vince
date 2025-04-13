@@ -73,10 +73,10 @@ export default function CoreCompetencies() {
 	}, [isMobile]);
 
 	return (
-		<section className='bg-primary py-20'>
-			<div className='container mx-auto px-4 text-center text-white'>
-				<p className='font-medium text-lg mb-3'>Core Competencies</p>
-				<h2 className=' font-bold text-[min(8vw,48px)] mb-12'>Why Choose Me as Your Developer</h2>
+		<section className='bg-primary py-10 sm:py-20'>
+			<div className='container--default text-center text-white'>
+				<p className='home__subheading--white mb-3'>Core Competencies</p>
+				<h2 className='home__heading--white mb-12'>Why Choose Me as Your Developer</h2>
 				{isMobile ? (
 					<Swiper spaceBetween={24} slidesPerView={1.4} className='mb-12'>
 						{expertiseData.map(({ title, description, icon }) => {
@@ -103,15 +103,15 @@ export default function CoreCompetencies() {
 						<p className='mb-4 leading-relaxed text-text-body'>
 							Let’s turn your vision into an engaging digital experience that delivers results.
 						</p>
-						<Link
-							to={'/'}
+						<a
 							className={buttonVariants({
 								variant: 'default',
 								size: 'lg',
 							})}
+							href='mailto:ladreravincejoseph@gmail.com'
 						>
-							Let’s Build Together
-						</Link>
+							Let's Build Together
+						</a>
 					</CardContent>
 					<img src={imgRight} className='core-competency-section__right-thumb' />
 				</Card>
