@@ -38,11 +38,17 @@ export default function HomeHero() {
 								}
 							}}
 						>
-							Get to Know Me
+							Meet the Developer
 						</Button>
 					</div>
 					<div className='flex justify-center relative'>
-						<img src={img} className='hidden lg:block w-[80%] h-auto ' />
+						<img
+							src={img}
+							height={998}
+							width={297}
+							alt='decorative-img'
+							className='hidden lg:block w-[80%] h-auto '
+						/>
 						<SvgComponent className='hidden lg:block absolute top-[5%] left-[15%] scale-[0.5] xl:left-[18%] xl:scale-[0.8]' />
 					</div>
 				</div>

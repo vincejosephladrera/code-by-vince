@@ -13,63 +13,52 @@ import imgRight from '@/assets/images/core-competencies-right.svg';
 
 import { Card, CardContent } from '@/components/ui/card';
 
-import { useState, useEffect } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { buttonVariants } from '@/components/ui/button';
+
+import useMobile from '@/hooks/useMobile';
 
 const expertiseData = [
 	{
 		icon: CodeIcon,
-		title: 'Front-End Mastery',
-		description: 'Creating responsive, user-centered interfaces with React and Next.js.',
+		title: 'Expert in Front-End Development',
+		description:
+			'Crafting responsive, intuitive, and user-focused interfaces with React and Next.js to create seamless digital experiences.',
 	},
 	{
 		icon: StackIcon,
 		title: 'Full-Stack Potential',
-		description: 'Building back-end skills for a well-rounded development approach.',
+		description:
+			'Building robust back-end systems that complement my front-end expertise, ensuring a complete, well-rounded approach to development.',
 	},
 	{
 		icon: LightBulbIcon,
 		title: 'Creative Problem Solver',
-		description: 'Tackling challenges with solutions that bring your vision to life.',
+		description:
+			'Transforming challenges into opportunities with innovative solutions that bring your vision to life and exceed expectations.',
 	},
 	{
 		icon: BookIcon,
-		title: 'Committed to Growth',
-		description: 'Up-to-date with the latest technologies for fresh, effective results.',
+		title: 'Passionate About Growth',
+		description:
+			'Continuously learning and staying ahead of the curve with the latest technologies, ensuring your project is always cutting-edge and effective.',
 	},
 	{
 		icon: CloudIcon,
 		title: 'Collaborative Partner',
-		description: 'Clear, consistent communication to keep you informed.',
+		description:
+			'Transparent and proactive communication throughout the development process, ensuring you’re always in the loop and part of the journey.',
 	},
 	{
 		icon: TargetIcon,
-		title: 'Quality-Oriented',
-		description: 'Dedicated to delivering polished, high-quality outcomes.',
+		title: 'Commitment to Quality',
+		description:
+			'Dedicated to delivering polished, bug-free, and high-quality outcomes that align with your goals and drive success.',
 	},
 ];
 
 export default function CoreCompetencies() {
-	const [isMobile, setIsMobile] = useState(false);
-
-	useEffect(() => {
-		function checkIfMobile() {
-			if (window.innerWidth < 640) {
-				setIsMobile(true);
-			} else {
-				setIsMobile(false);
-			}
-		}
-
-		checkIfMobile();
-
-		window.addEventListener('resize', checkIfMobile);
-
-		return () => {
-			window.removeEventListener('resize', checkIfMobile);
-		};
-	}, [isMobile]);
+	const { isMobile } = useMobile(640);
 
 	return (
 		<section className='bg-primary py-10 sm:py-20'>

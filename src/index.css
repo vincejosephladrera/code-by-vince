@@ -254,3 +254,7 @@
 #linkedin__element:hover path {
 	filter: grayscale(0);
 }
+
+.tools-card {
+	@apply py-2 sm:py-4 gap-0 text-center font-extrabold text-black border-2 border-black rounded-md h-full flex justify-center whitespace-nowrap;
+}

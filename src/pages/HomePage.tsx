@@ -1,7 +1,7 @@
-import HomeHero from './home-hero';
-import CoreCompetencies from './core-competencies';
+import HomeHero from '../features/landing-page/home-hero';
+import CoreCompetencies from '../features/landing-page/core-competencies';
 // import RecentProjects from './recent-projects';
-import AboutMe from './about-me';
+import AboutMe from '../features/landing-page/about-me';
 
 export default function HomePage() {
 	return (
