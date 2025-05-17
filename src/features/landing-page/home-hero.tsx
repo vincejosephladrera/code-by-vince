@@ -1,11 +1,11 @@
-import { Button, buttonVariants } from '@/components/ui/button';
+import { Button, buttonVariants } from '@/components/shadcn/button';
 import img from '@/assets/images/hero-img.svg';
 import SvgComponent from '@/components/hero-interactive-img';
 
 export default function HomeHero() {
 	return (
 		<>
-			<section className='pt-[136px] pb-[40px] md:pb-0 md:max-h-screen border border-body overflow-hidden'>
+			<section className='py-[40px] md:pb-0 md:max-h-screen border border-body overflow-hidden'>
 				<div className='container--default flex flex-col gap-3 items-center text-center relative'>
 					<p className='home__subheading'>Welcome! Let’s Build Something Amazing</p>
 					<h1 className='text-secondary text-[min(8vw,56px)]  mb-8'>

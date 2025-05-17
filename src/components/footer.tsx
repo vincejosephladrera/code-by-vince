@@ -1,4 +1,4 @@
-import { buttonVariants } from './ui/button';
+import { buttonVariants } from './shadcn/button';
 import logo from '@/assets/images/logo-footer.svg';
 
 export default function Footer() {

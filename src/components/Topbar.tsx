@@ -1,7 +1,7 @@
 import { HeaderLogoIcon } from '@/assets/icons/icons';
 import useCustomLink from '@/hooks/useCustomLink';
 
-export default function Header() {
+export default function Topbar() {
 	const { isHovered, CustomLink } = useCustomLink();
 
 	return (

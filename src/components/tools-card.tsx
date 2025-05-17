@@ -1,4 +1,4 @@
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/shadcn/card';
 
 export default function ToolsCard({ index = 1, name }: { index: number; name: string }) {
 	if (index % 2 === 0) {

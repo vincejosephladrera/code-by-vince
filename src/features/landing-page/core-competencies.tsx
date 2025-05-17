@@ -11,10 +11,10 @@ import {
 import imgLeft from '@/assets/images/core-competencies-left.svg';
 import imgRight from '@/assets/images/core-competencies-right.svg';
 
-import { Card, CardContent } from '@/components/ui/card';
+import { Card, CardContent } from '@/components/shadcn/card';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { buttonVariants } from '@/components/ui/button';
+import { buttonVariants } from '@/components/shadcn/button';
 
 import useMobile from '@/hooks/useMobile';
 

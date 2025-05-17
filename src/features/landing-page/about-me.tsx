@@ -1,5 +1,5 @@
 import ToolsCard from '@/components/tools-card';
-import { buttonVariants } from '@/components/ui/button';
+import { buttonVariants } from '@/components/shadcn/button';
 import img from '@/assets/images/about-me-img.webp';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import useMobile from '@/hooks/useMobile';
