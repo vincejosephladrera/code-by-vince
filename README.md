@@ -1,29 +1,63 @@
-# Create T3 App
+# 🌐 Personal Website
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+Hi, I'm Vince 👋 — this is the source code for my personal website. It's where I showcase my work, share what I’m learning, and experiment with new technologies.
 
-## What's next? How do I make an app with this?
+## 📌 Most Recent Update
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- Migrated from **Vite** to **Next.js** for server-side rendering and SEO.
+- Optimized performance and accessibility based on **Lighthouse** scores.
+- Added **About Me & Skills** section to the homepage.
+- Improved mobile responsiveness and layout consistency across devices.
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+See the  [Features](#features), and [Lighthouse Performance](#lighthouse-performance) sections for more details.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## 📋 Project Progress
 
-## Learn More
+You can track the ongoing tasks and progress on the project’s Kanban board here:  
+<a href="https://github.com/users/vincejosephladrera/projects/5" target="_blank" rel="noopener noreferrer">Project Kanban Board</a>
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## 🛠 Project Background
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+This project was initially created using **Vite** for its fast development experience. I later migrated to **Next.js** to take advantage of server-side rendering (SSR), better SEO, built-in routing, and a more scalable foundation.
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## 🚀 Features
 
-## How do I deploy this?
+- ✅ **Responsive Design**
+- ✅ **Performance tested with Lighthouse**
+- ✅ **About Me & Skills**
+- ⬜ Portfolio section *(coming soon)*
+- ⬜ Blog or Learning journal *(coming soon)*
+- ⬜ Contact Form *(coming soon)*
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## 📊 Lighthouse Performance
+
+Here are the Lighthouse scores after migrating to Next.js and optimizing for performance:
+
+| Desktop | Mobile |
+|---------|--------|
+| ![Lighthouse Desktop](https://github.com/user-attachments/assets/da8efaaf-c90c-44e2-97b0-33a38656c405) | ![Lighthouse Mobile](https://github.com/user-attachments/assets/78cc126b-f00f-4af5-8b22-a571d439f819) |
+
+> Screenshots were taken from production using Chrome DevTools Lighthouse.
+
+## 🧰 Tech Stack
+
+- **Frontend:** Next.js, React.js, Typescript, Radix UI, Shadcn UI, Tailwind CSS
+- **Deployment:** Vercel  
+- **Other Tools:** Figma, Git, Markdown, Lighthouse
+
+## 📦 Getting Started
+
+To run this project locally:
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/personal-website.git
+
+# Navigate to the project directory
+cd personal-website
+
+# Install dependencies
+npm install
+
+# Run the development server
+npm run dev
