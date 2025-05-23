@@ -9,7 +9,7 @@ Hi, I'm Vince 👋 — this is the source code for my personal website. It's whe
 - Added **About Me & Skills** section to the homepage.
 - Improved mobile responsiveness and layout consistency across devices.
 
-See the  [Features](#features), and [Lighthouse Performance](#lighthouse-performance) sections for more details.
+See the  [Features](#-features), and [Lighthouse Performance](#-lighthouse-performance) sections for more details.
 
 ## 📋 Project Progress
 
