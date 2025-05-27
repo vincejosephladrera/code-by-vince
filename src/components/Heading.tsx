@@ -10,7 +10,7 @@ const headingVariants = cva("leading-[1.8]", {
     },
     variantColor: {
       default: "text-inherit",
-      black: "text-neutral-950",
+      black: "text-accent",
       white: "text-white",
       primary: "text-primary",
       secondary: "text-secondary",

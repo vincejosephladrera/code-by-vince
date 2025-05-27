@@ -19,7 +19,7 @@ const TopNavBar = () => {
     <>
       <header
         className={cn(
-          "fixed top-0 right-0 z-50 flex h-[96px] w-screen items-center border-b border-b-gray-950 bg-white",
+          "border-b-accent fixed top-0 right-0 z-50 flex h-[96px] w-screen items-center border-b bg-white",
         )}
       >
         <div className="container mx-auto flex items-center justify-between px-4">

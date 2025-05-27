@@ -29,7 +29,7 @@ const Hero = () => {
               <br />
               Developer & Problem Solver
             </Heading>
-            <div className="mb-6 flex flex-col justify-center gap-4 md:flex-row">
+            <nav className="mb-6 flex flex-col justify-center gap-4 md:flex-row">
               <Link
                 href="mailto:ladreravincejoseph@gmail.com"
                 className={buttonVariants({ variantColor: "primary" })}
@@ -42,7 +42,7 @@ const Hero = () => {
               >
                 Get to Know Me
               </Link>
-            </div>
+            </nav>
           </div>
         </div>
         <Image

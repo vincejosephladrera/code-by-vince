@@ -27,6 +27,7 @@ const MenuLink = ({ href, text, isDisabled = false }: MenuLinkProps) => {
         "hover:text-gray-300",
       )}
       aria-disabled={isDisabled}
+      tabIndex={isDisabled ? -1 : 0}
     >
       <Heading as="h2" size="sm">
         {text}

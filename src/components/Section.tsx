@@ -5,12 +5,14 @@ const sectionVariants = cva("py-8", {
   variants: {
     padding: {
       default: "md:py-20",
-      hero: "md:py-[80px]",
+      hero: "py-0 md:pt-20",
       compact: "md:py-8",
+      none: "",
     },
     variantColor: {
       default: "bg-white",
       primary: "bg-primary",
+      accent: "bg-accent",
     },
   },
   defaultVariants: {
@@ -22,22 +24,27 @@ const sectionVariants = cva("py-8", {
 interface SectionProps
   extends React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof sectionVariants>,
-    React.RefAttributes<HTMLDivElement> {}
+    React.RefAttributes<HTMLDivElement> {
+  as?: "footer" | "section";
+}
 
 function Section({
   children,
   className,
   padding,
   variantColor,
+  as = "section",
   ...props
 }: SectionProps) {
+  const Component = as;
+
   return (
-    <section
+    <Component
       className={cn(sectionVariants({ padding, variantColor }), className)}
       {...props}
     >
       {children}
-    </section>
+    </Component>
   );
 }
 
