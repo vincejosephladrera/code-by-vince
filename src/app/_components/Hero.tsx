@@ -45,17 +45,19 @@ const Hero = () => {
             </nav>
           </div>
         </div>
-        <Image
-          className="h-auto w-full"
-          src={
-            isMobile
-              ? "/images/mobile-home-hero.webp"
-              : "/images/desktop-home-hero.webp"
-          }
-          alt="decorative image"
-          height={416}
-          width={isMobile ? 787 : 1280}
-        ></Image>
+        <picture>
+          <source
+            srcSet="/images/desktop-home-hero.webp"
+            media="(min-width: 768px)"
+          />
+          <img
+            src="/images/mobile-home-hero.webp"
+            alt="decorative image"
+            className="aspect-[787/416] h-auto w-full md:aspect-[1280/416]"
+            width={787}
+            height={416}
+          />
+        </picture>
       </Container>
     </Section>
   );

@@ -56,7 +56,7 @@ export default function RootLayout({
         <TRPCReactProvider>
           <main className="pt-[96px]">{children}</main>
         </TRPCReactProvider>
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   );
