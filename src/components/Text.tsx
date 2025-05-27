@@ -10,7 +10,7 @@ const textVariants = cva("", {
     },
     variantColor: {
       default: "text-inherit",
-      black: "text-neutral-950",
+      black: "text-accent",
       primary: "text-primary",
       secondary: "text-secondary",
       white: "text-white",

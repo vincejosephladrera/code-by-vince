@@ -1,3 +1,4 @@
+import { type Metadata } from "next";
 import Image from "next/image";
 import Section from "@/components/Section";
 import Container from "@/components/Container";
@@ -17,17 +18,16 @@ import Competencies from "./Competencies";
 import Link from "next/link";
 // import Technologies from "./Techonologies";
 
+export const metadata: Metadata = {
+  title: "About | Code By Vince",
+};
+
 const About = () => {
   return (
     <>
-      <Section className="!p-0" padding="hero">
-        <Container className="grid gap-y-6 lg:grid-cols-2">
-          <div
-            className={cn(
-              "lg:sticky",
-              "about-sticky-content top-[136px] flex flex-col justify-between self-start",
-            )}
-          >
+      <Section className="about-hero" padding="hero">
+        <Container className="3xl:grid-cols-1 grid lg:grid-cols-2">
+          <div className="about-sticky-content">
             <div>
               <Text
                 variantColor="primary"
@@ -43,22 +43,16 @@ const About = () => {
                 className="mb-4 leading-[1.3]"
               >
                 Crafting Solutions in Code for{" "}
-                <span className="text-primary">3+ Years</span>
+                <span className="text-primary">4+ Years</span>
               </Heading>
-              <Text className="mb-3">
-                I&apos;m a Web Developer specializing in front-end development,
-                with a strong focus on building responsive, accessible, and
-                user-first interfaces. While my expertise lies in crafting
-                engaging front-end experiences, I also have hands-on experience
-                in back-end development—designing RESTful APIs and structuring
-                efficient database schemas. This full-spectrum understanding
-                helps me build applications that are not only visually polished
-                but also scalable and well-architected behind the scenes.
-              </Text>
-              <Text className="mb-6">
-                Open to freelance and full-time opportunities where I can create
-                impact and continue to grow. Let’s connect if you have a project
-                in mind!
+              <Text className="mb-6 leading-7">
+                Frontend Developer with 4 years of web development experience (
+                2 professionally ). Experienced in Next.js, React, and building
+                scalable apps. Proficient in mentoring juniors and familiar with
+                cloud storage, CDNs, and CI/CD (GitHub Actions). Passionate
+                learner who loves Frontend Masters and unwinds with food vlogs
+                and stand-up comedy. Open to freelance and full-time
+                opportunities.
               </Text>
               <div className="flex-start flex items-center gap-3">
                 <Link
@@ -70,7 +64,7 @@ const About = () => {
                 <Tooltip>
                   <TooltipTrigger asChild>
                     <Link
-                      href="https://drive.google.com/file/d/1lfUi1H-1TrO0TH84t7PtEoLWu2Jl3-tS/view?usp=drive_link"
+                      href="https://drive.google.com/file/d/1GZMmlPl9DYOe1XvClBqU0QKNlGGeiUIQ/view?usp=drive_link"
                       target="_blank"
                     >
                       <FileUserIcon className="text-secondary" />
@@ -96,7 +90,7 @@ const About = () => {
               </div>
             </div>
             <Image
-              className="w-full"
+              className="about-decorative"
               src="/images/about-hero-graphics.webp"
               alt="decorative image"
               width={616}

@@ -32,8 +32,8 @@ interface MenuProps {
 
 const Menu = ({ isShown, setIsShown }: MenuProps) => {
   return (
-    <div className={cn("menu", isShown && "menu--shown")}>
-      <div className="flex h-[100svh] flex-col">
+    <aside className={cn("menu", isShown && "menu--shown")}>
+      <div className="flex h-[100svh] flex-col items-end">
         <button
           className="ml-auto text-white hover:text-gray-400"
           role="button"
@@ -53,7 +53,7 @@ const Menu = ({ isShown, setIsShown }: MenuProps) => {
           ))}
         </div>
       </div>
-    </div>
+    </aside>
   );
 };
 

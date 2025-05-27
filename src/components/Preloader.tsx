@@ -49,7 +49,7 @@ const Preloader = () => {
       initial="visible"
       variants={animationVariants}
       animate={["hidden"]}
-      className="fixed top-0 left-0 z-50 flex h-screen w-screen items-center justify-center bg-neutral-950"
+      className="bg-accent fixed top-0 left-0 z-50 flex h-screen w-screen items-center justify-center"
     >
       <Logo />
     </motion.div>

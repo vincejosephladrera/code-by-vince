@@ -6,18 +6,21 @@ import Preloader from "../components/Preloader";
 
 import { TRPCReactProvider } from "@/trpc/react";
 import TopNavBar from "./_components/TopNavBar";
+import Footer from "./_components/Footer";
 
 export const metadata: Metadata = {
   title: "Code By Vince",
-  description: "Front-end web developer crafting responsive, accessible interfaces with back-end experience in RESTful APIs and scalable application architecture.",
+  description:
+    "Frontend Developer with 4 years of web development experience ( 2 professionally ). Experienced in Next.js, React, and building scalable apps. Proficient in mentoring juniors and familiar with cloud storage, CDNs, and CI/CD (GitHub Actions). Passionate learner who loves Frontend Masters and unwinds with food vlogs and stand-up comedy. Open to freelance and full-time opportunities. Let’s connect if you have a project in mind!",
   openGraph: {
     title: "Code By Vince",
-    description: "Front-end web developer crafting responsive, accessible interfaces with back-end experience in RESTful APIs and scalable application architecture.",
-    url: "https://codebyvince.com", 
+    description:
+      "Frontend Developer with 4 years of web development experience ( 2 professionally ). Experienced in Next.js, React, and building scalable apps. Proficient in mentoring juniors and familiar with cloud storage, CDNs, and CI/CD (GitHub Actions). Passionate learner who loves Frontend Masters and unwinds with food vlogs and stand-up comedy. Open to freelance and full-time opportunities. Let’s connect if you have a project in mind!",
+    url: "https://codebyvince.com",
     siteName: "Code By Vince",
     images: [
       {
-        url: "/meta-image.png", 
+        url: "/meta-image.png",
         width: 1200,
         height: 630,
         alt: "Code By Vince",
@@ -28,7 +31,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Code By Vince",
-    description: "Front-end web developer crafting responsive, accessible interfaces with back-end experience in RESTful APIs and scalable application architecture.",
+    description:
+      "Frontend Developer with 4 years of web development experience ( 2 professionally ). Experienced in Next.js, React, and building scalable apps. Proficient in mentoring juniors and familiar with cloud storage, CDNs, and CI/CD (GitHub Actions). Passionate learner who loves Frontend Masters and unwinds with food vlogs and stand-up comedy. Open to freelance and full-time opportunities. Let’s connect if you have a project in mind!",
     images: ["/meta-image.png"],
   },
 };
@@ -52,6 +56,7 @@ export default function RootLayout({
         <TRPCReactProvider>
           <main className="pt-[96px]">{children}</main>
         </TRPCReactProvider>
+        <Footer />
       </body>
     </html>
   );
