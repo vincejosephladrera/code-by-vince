@@ -6,8 +6,6 @@ import { useEffect, useState } from "react";
 const Preloader = () => {
   const [hasLoadedOnce, setHasLoadedOnce] = useState(false);
 
-  console.log(hasLoadedOnce);
-
   const animationVariants = {
     visible: {
       opacity: 1,

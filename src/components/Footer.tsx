@@ -1,6 +1,6 @@
 import Section from "@/components/Section";
 import Container from "@/components/Container";
-import { buttonVariants } from "@/components/Button";
+import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
@@ -24,7 +24,7 @@ const Footer = () => {
               <Link
                 className={cn(
                   buttonVariants({
-                    variantColor: "primary",
+                    variant: "default",
                   }),
                   "lg:w-fit",
                 )}
@@ -37,21 +37,16 @@ const Footer = () => {
               <h2 className="mb-12 font-bold">Explore</h2>
               <ul className="grid grid-cols-2 flex-col gap-12 md:flex">
                 <li>
-                  <a
-                    href="#"
-                    className="footer-link"
-                    aria-disabled="true"
-                    tabIndex={-1}
-                  >
-                    Projects
-                  </a>
-                </li>
-                <li>
                   <Link className="footer-link" href="/about">
-                    About
+                    Developer Stats
                   </Link>
                 </li>
                 <li>
+                  <Link className="footer-link" href="/projects">
+                    Quests
+                  </Link>
+                </li>
+                {/* <li>
                   <a
                     href="#"
                     className="footer-link"
@@ -70,11 +65,11 @@ const Footer = () => {
                   >
                     Projects
                   </a>
-                </li>
+                </li> */}
               </ul>
             </nav>
             <address className="not-italic">
-              <h2 className="mb-12 font-bold">Get in Touch</h2>
+              <h2 className="mb-12 font-bold">Join Party</h2>
               <div className="grid flex-col items-start gap-12 sm:grid-cols-2 md:flex">
                 <Link className="footer-link" href="tel:+639457012999">
                   09457012999
@@ -101,13 +96,6 @@ const Footer = () => {
             <span className="mr-auto text-neutral-100">
               © 2025 Code by Vince. All Rights Reserved
             </span>
-            {/* <img
-						alt='Code by Vince logo'
-						className='w-[50%] sm:w-[25%] h-auto'
-						src={logo}
-						width={355}
-						height={48}
-					/> */}
           </div>
         </Container>
       </Section>
