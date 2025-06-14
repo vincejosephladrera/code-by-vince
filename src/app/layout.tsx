@@ -4,9 +4,8 @@ import { type Metadata } from "next";
 import { Geist } from "next/font/google";
 import Preloader from "../components/Preloader";
 
-import { TRPCReactProvider } from "@/trpc/react";
-import TopNavBar from "./_components/TopNavBar";
-import Footer from "./_components/Footer";
+import TopNavBar from "@/components/TopNavBar";
+import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
   title: "Code By Vince",
@@ -53,9 +52,7 @@ export default function RootLayout({
       <body>
         <TopNavBar />
         <Preloader />
-        <TRPCReactProvider>
-          <main className="pt-[96px]">{children}</main>
-        </TRPCReactProvider>
+        <main className="pt-[65px]">{children}</main>
         <Footer />
       </body>
     </html>
