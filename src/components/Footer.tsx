@@ -3,6 +3,7 @@ import Container from "@/components/Container";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
+import { navItems } from "@/data/navItems";
 
 const Footer = () => {
   return (
@@ -30,42 +31,19 @@ const Footer = () => {
                 )}
                 href="mailto:ladreravincejoseph@gmail.com"
               >
-                Let&apos;s Build Together
+                💬 Join Party
               </Link>
             </section>
             <nav aria-label="Footer navigation">
               <h2 className="mb-12 font-bold">Explore</h2>
               <ul className="grid grid-cols-2 flex-col gap-12 md:flex">
-                <li>
-                  <Link className="footer-link" href="/about">
-                    Developer Stats
-                  </Link>
-                </li>
-                <li>
-                  <Link className="footer-link" href="/projects">
-                    Quests
-                  </Link>
-                </li>
-                {/* <li>
-                  <a
-                    href="#"
-                    className="footer-link"
-                    aria-disabled="true"
-                    tabIndex={-1}
-                  >
-                    Blogs
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    className="footer-link"
-                    aria-disabled="true"
-                    tabIndex={-1}
-                  >
-                    Projects
-                  </a>
-                </li> */}
+                {navItems.map((item) => (
+                  <li key={item.path}>
+                    <Link className="footer-link" href="/about">
+                      {item.label}
+                    </Link>
+                  </li>
+                ))}
               </ul>
             </nav>
             <address className="not-italic">

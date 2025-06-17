@@ -30,6 +30,8 @@
 
   --border: hsl(214.3 31.8% 91.4%);
   --input: hsl(214.3 31.8% 91.4%);
+  --input-focus: #ff4d00;
+  --input-ring: #ff4d00;
   --ring: hsl(222.2 84% 4.9%);
 
   --radius: 0.5rem;
@@ -79,6 +81,8 @@
   --color-destructive: var(--destructive);
   --color-border: var(--border);
   --color-input: var(--input);
+  --color-input-focus: var(--input-focus);
+  --color-input-ring: var(--input-ring);
   --color-ring: var(--ring);
   --color-chart-1: var(--chart-1);
   --color-chart-2: var(--chart-2);
@@ -126,50 +130,25 @@
 }
 
 @layer components {
-  .hero {
-    height: calc(100svh - 96px);
+  .blogs-dynamic-content h1,
+  .blogs-dynamic-content h2,
+  .blogs-dynamic-content h3,
+  .blogs-dynamic-content h4,
+  .blogs-dynamic-content h5,
+  .blogs-dynamic-content h6 {
+    @apply text-game-slate font-bold;
   }
 
-  .menu {
-    @apply bg-accent fixed top-0 right-0 z-50 w-[300px] translate-x-full p-8 transition-transform;
+  .blogs-dynamic-content > section:not(:last-of-type) {
+    @apply mb-8;
   }
 
-  .menu--shown {
-    @apply translate-x-0;
+  .blogs-dynamic-content section > :not(:last-child) {
+    @apply mb-4;
   }
 
-  .card {
-    box-shadow:
-      rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
-  }
-
-  .core-competency-section__left-thumb {
-    @apply absolute hidden h-auto w-[20%] object-cover sm:right-[24px] sm:bottom-[-48%] sm:block sm:w-[40%] md:w-[31%] lg:right-auto lg:left-[16px] lg:w-[20%] xl:bottom-[-73%] xl:left-[56px] 2xl:w-[16%];
-  }
-
-  .core-competency-section__right-thumb {
-    @apply absolute hidden h-auto w-[20%] object-cover lg:right-[16px] lg:bottom-[-13%] lg:block lg:w-[20%] xl:right-[56px] xl:bottom-[-25%] 2xl:w-[16%];
-  }
-
-  .about-hero {
-    @apply !p-0;
-  }
-
-  .about-sticky-content {
-    @apply 3xl:static 3xl:grid 3xl:grid-cols-2 3xl:h-fit 3xl:pt-8 top-[136px] flex flex-col justify-between gap-6 self-start pt-8 lg:sticky lg:h-[calc(100svh-136px)] lg:pt-0;
-  }
-
-  @media (width > 120rem) {
-    .vertical-timeline {
-      max-width: 100% !important;
-      margin: 0 0 !important;
-      width: 100% !important;
-    }
-  }
-
-  .about-decorative {
-    width: 100%;
+  .blogs-dynamic-content h2 {
+    @apply text-3xl font-bold;
   }
 
   .footer-link {

@@ -1,5 +1,5 @@
 "use client";
-import { Crown, Zap, ArrowRight, Download } from "lucide-react";
+import { Crown, Zap, ArrowRight, NotebookPen } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { CardContent } from "@/components/ui/card";
@@ -59,15 +59,17 @@ const HomeHero = () => {
                   <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
                 </Link>
               </Button>
-
               <Button
+                asChild
                 variant="outline"
                 color="secondary"
                 size="lg"
                 className="grow px-8 py-6 text-lg font-bold"
               >
-                <Download className="mr-1" />
-                Download Resume
+                <Link href="/blogs">
+                  <NotebookPen className="mr-1" />
+                  Read Chronicles
+                </Link>
               </Button>
             </div>
           </div>
