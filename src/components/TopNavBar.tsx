@@ -7,14 +7,8 @@ import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
+import { navItems } from "@/data/navItems";
 import Container from "./Container";
-
-const navItems = [
-  { path: "/about", label: "Developer Stats", icon: "🧙‍♂️" },
-  { path: "/projects", label: "Quest", icon: "🗺️ " },
-  // { path: "/blogs", label: "Chronicles", icon: "📜" },
-  // { path: "#", label: "Join Party", icon: "💬" },
-];
 
 const TopNavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,11 +48,6 @@ const TopNavBar = () => {
               >
                 <span className="text-base">{item.icon}</span>
                 {item.label}
-                {pathname === item.path && (
-                  <div className="absolute bottom-6 left-1/2 -translate-x-1/2 transform">
-                    <div className="bg-primary h-2 w-2 animate-pulse rounded-full" />
-                  </div>
-                )}
               </Link>
             ))}
           </nav>
