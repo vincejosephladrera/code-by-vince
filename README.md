@@ -9,7 +9,7 @@ Hi, I'm Vince 👋 — this is the source code for my personal website. It's whe
 - Added **About Me & Skills** section to the homepage.
 - Improved mobile responsiveness and layout consistency across devices.
 
-See the  [Features](#-features), and [Lighthouse Performance](#-lighthouse-performance) sections for more details.
+See the [Features](#-features), and [Lighthouse Performance](#-lighthouse-performance) sections for more details.
 
 ## 📋 Project Progress
 
@@ -25,16 +25,16 @@ This project was initially created using **Vite** for its fast development exper
 - ✅ **Responsive Design**
 - ✅ **Performance tested with Lighthouse**
 - ✅ **About Me & Skills**
-- ⬜ Portfolio section *(coming soon)*
-- ⬜ Blog or Learning journal *(coming soon)*
-- ⬜ Contact Form *(coming soon)*
+- ✅ **Projects**
+- ✅ **Blogs**
+- ⬜ Contact Form _(coming soon)_
 
 ## 📊 Lighthouse Performance
 
 Here are the Lighthouse scores after migrating to Next.js and optimizing for performance:
 
-| Desktop | Mobile |
-|---------|--------|
+| Desktop                                                                                                | Mobile                                                                                                |
+| ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
 | ![Lighthouse Desktop](https://github.com/user-attachments/assets/da8efaaf-c90c-44e2-97b0-33a38656c405) | ![Lighthouse Mobile](https://github.com/user-attachments/assets/78cc126b-f00f-4af5-8b22-a571d439f819) |
 
 > Screenshots were taken from production using Chrome DevTools Lighthouse.
@@ -42,7 +42,7 @@ Here are the Lighthouse scores after migrating to Next.js and optimizing for per
 ## 🧰 Tech Stack
 
 - **Frontend:** Next.js, React.js, Typescript, Radix UI, Shadcn UI, Tailwind CSS
-- **Deployment:** Vercel  
+- **Deployment:** Vercel
 - **Other Tools:** Figma, Git, Markdown, Lighthouse
 
 ## 📦 Getting Started
@@ -61,3 +61,4 @@ npm install
 
 # Run the development server
 npm run dev
+```
