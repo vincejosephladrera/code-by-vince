@@ -6,7 +6,7 @@ const DeveloperLogsHeader = () => {
   return (
     <div className="mb-16">
       <Container>
-        <Card>
+        <Card className="border-primary/20 shadow-lg">
           <CardContent>
             <div className="grid justify-center text-center">
               <h1 className="text-game-slate mb-6 text-5xl font-bold">
