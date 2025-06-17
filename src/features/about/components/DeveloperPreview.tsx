@@ -3,7 +3,7 @@ import { skillGroup, allSkills } from "../data/skills";
 import { experience } from "../data/experience";
 import { Calendar, Sword, Target, Trophy } from "lucide-react";
 import SkillCard from "./SkillCard";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { buttonVariants } from "@/components/ui/button";
 import ExperienceCardSmall from "./ExperienceCardSmall";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
